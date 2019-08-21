@@ -1,4 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
-  background: lime;
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  color: #5f6368;
+  background: white;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#header-left {
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#header-left a.nav-link {
+  color: #5f6368;
+  font-size: 0.8125rem;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+#header-left a.nav-link:hover {
+  text-decoration: underline;
+}
+
+#header-right {
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#header-right a.nav-link {
+  color: #5f6368;
+  font-size: 0.8125rem;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+#header-right a.nav-link:hover {
+  text-decoration: underline;
+}
+
+#header-right a.nav-image {
+  margin: 0 5px;
+}
+
+#header-right a.nav-image img {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+#header-right a.nav-icon {
+  margin: 0 15px;
+}
+
+#header-right a.nav-icon i {
+  color: #5f6368;
+  font-size: 1.3rem;
+}
+
+#header-right a.nav-icon i:hover {
+  color: rgba(0, 0, 0, 0.87);
 }
 /*# sourceMappingURL=main.css.map */

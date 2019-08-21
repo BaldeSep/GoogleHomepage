@@ -1,3 +1,72 @@
+// Variables
+$text-light-dark: rgb(95, 99, 104);
+$text-dark: rgba(0, 0, 0, 0.87);
+$bg-white: rgb(255, 255, 255);
+
+
+@mixin header-links {
+    a{
+        &.nav-link{
+            color: $text-light-dark;
+            font-size: 0.8125rem;
+            text-decoration: none; 
+            margin: 0 5px;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
 body{
-    background: lime;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    color: $text-light-dark;
+    background: $bg-white;
+}
+
+header{
+    nav{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+#header-left{
+    margin: 10px;
+    @include header-links;
+    display: flex;
+    align-items: center;
+}
+#header-right{
+    margin: 10px;
+    @include header-links;
+    display: flex;
+    align-items: center;
+    a.nav-image{
+        margin: 0 5px;
+        img{
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+        }
+    }
+    a.nav-icon{
+        margin: 0 15px;
+        i{
+            color: $text-light-dark;
+            font-size: 1.3rem;
+            &:hover{
+                color: $text-dark;
+            }
+        }
+    }
 }
