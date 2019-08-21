@@ -31,7 +31,9 @@ body{
     font-size: 1rem;
     color: $text-light-dark;
     background: $bg-white;
-    height: 100vh;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
 }
 
 header{
@@ -40,6 +42,8 @@ header{
         justify-content: space-between;
     }
 }
+
+
 #header-left{
     margin: 10px;
     @include header-links;
@@ -74,6 +78,7 @@ header{
 
 // main searchbar
 main{
+    flex-grow:  1;
     #main{
         max-width: 30%;
         margin: 145px auto;
@@ -148,3 +153,43 @@ main{
 }
 
 
+// footer
+footer{
+    display: flex;
+    justify-content: space-between;
+    background: #f2f2f2;
+    line-height: 40px;
+    border-top: 1px solid #e4e4e4;
+
+    #footer-left{
+        display: flex;
+        justify-content: space-evenly;
+        a{
+            color: #5f6368;
+            text-decoration: none;
+            font-size: 10pt;
+            padding-left: 27px;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+
+    #footer-right{
+        display: flex;
+        justify-content: space-evenly;
+        a{
+            color: #5f6368;
+            text-decoration: none;
+            font-size: 10pt;
+            padding-left: 27px;
+            &:hover{
+                text-decoration: underline;
+            }
+            &:last-child{
+                padding-right: 27px;
+            }
+        }
+    }
+
+}

@@ -10,7 +10,14 @@ body {
   font-size: 1rem;
   color: #5f6368;
   background: white;
-  height: 100vh;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
 }
 
 header nav {
@@ -86,6 +93,12 @@ header nav {
 
 #header-right a.nav-icon i:hover {
   color: rgba(0, 0, 0, 0.87);
+}
+
+main {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 main #main {
@@ -171,5 +184,61 @@ main #main {
   background-image: -webkit-linear-gradient(top, #f8f8f8, #f1f1f1);
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
           box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #f2f2f2;
+  line-height: 40px;
+  border-top: 1px solid #e4e4e4;
+}
+
+footer #footer-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+footer #footer-left a {
+  color: #5f6368;
+  text-decoration: none;
+  font-size: 10pt;
+  padding-left: 27px;
+}
+
+footer #footer-left a:hover {
+  text-decoration: underline;
+}
+
+footer #footer-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+footer #footer-right a {
+  color: #5f6368;
+  text-decoration: none;
+  font-size: 10pt;
+  padding-left: 27px;
+}
+
+footer #footer-right a:hover {
+  text-decoration: underline;
+}
+
+footer #footer-right a:last-child {
+  padding-right: 27px;
 }
 /*# sourceMappingURL=main.css.map */
